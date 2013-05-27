@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Provider:</b>
+  <%= @user.provider %>
+</p>
+
+<p>
+  <b>Uid:</b>
+  <%= @user.uid %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @user.name %>
+</p>
+
+<p>
+  <b>Screen name:</b>
+  <%= @user.screen_name %>
+</p>
+
+<p>
+  <b>Access token:</b>
+  <%= @user.access_token %>
+</p>
+
+<p>
+  <b>Access secret:</b>
+  <%= @user.access_secret %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

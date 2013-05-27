@@ -1,5 +1,10 @@
 Sca::Application.routes.draw do
-
+  resources :users
+  root to: 'users#index'
+match 'auth/twitter/callback', to: 'sessions#create' # You can change "twitter" to "provider" to make it generic so that any provider will be passed to that path.
+match 'auth/failure', to: redirect('/') # Here we can redirect logon failure and display a message to that effect, if we specify.
+match 'signout', to: 'sessions#destroy', as: 'signout'
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
