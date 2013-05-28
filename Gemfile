@@ -5,9 +5,9 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-gem 'omniauth-twitter'
-gem 'twitter'
+gem 'sqlite3', '1.3.7'
+gem 'omniauth-twitter', '0.0.16'
+gem 'twitter', '4.6.2'
 gem 'will_paginate', '> 3.0'
 gem 'pry', :group => :development
 # Gems used only for assets and not required
@@ -22,7 +22,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '2.2.1'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
