@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  tweet_id: MyString
+  tweet_text: MyString
+  length: 1
+  bitlied: false
+  approved: false
+
+two:
+  tweet_id: MyString
+  tweet_text: MyString
+  length: 1
+  bitlied: false
+  approved: false

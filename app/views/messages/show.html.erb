@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Tweet:</b>
+  <%= @message.tweet_id %>
+</p>
+
+<p>
+  <b>Tweet text:</b>
+  <%= @message.tweet_text %>
+</p>
+
+<p>
+  <b>Length:</b>
+  <%= @message.length %>
+</p>
+
+<p>
+  <b>Bitlied:</b>
+  <%= @message.bitlied %>
+</p>
+
+<p>
+  <b>Approved:</b>
+  <%= @message.approved %>
+</p>
+
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>

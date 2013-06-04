@@ -1,0 +1,31 @@
+<h1>Listing messages</h1>
+
+<table>
+  <tr>
+    <th>Tweet</th>
+    <th>Tweet text</th>
+    <th>Length</th>
+    <th>Bitlied</th>
+    <th>Approved</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @messages.each do |message| %>
+  <tr>
+    <td><%= message.tweet_id %></td>
+    <td><%= message.tweet_text %></td>
+    <td><%= message.length %></td>
+    <td><%= message.bitlied %></td>
+    <td><%= message.approved %></td>
+    <td><%= link_to 'Show', message %></td>
+    <td><%= link_to 'Edit', edit_message_path(message) %></td>
+    <td><%= link_to 'Destroy', message, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Message', new_message_path %>
