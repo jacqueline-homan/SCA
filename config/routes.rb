@@ -1,4 +1,7 @@
 Sca::Application.routes.draw do
+  resources :messages
+
+
   resources :users
   root to: 'users#index'
 match 'auth/twitter/callback', to: 'sessions#create' # You can change "twitter" to "provider" to make it generic so that any provider will be passed to that path.
